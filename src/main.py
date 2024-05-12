@@ -14,8 +14,6 @@ app.register_blueprint(coordinate_bp, url_prefix='/coordinate')
 
 if __name__ == '__main__':
     with app.app_context():
-        # 在这里执行需要应用上下文的操作
-        # 例如，访问数据库或使用Flask的全局变量
         db.create_all()
         # addBaseCoordinate()
     app.run()

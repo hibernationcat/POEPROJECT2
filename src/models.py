@@ -4,11 +4,6 @@ db = SQLAlchemy()
 Base = db.Model
 
 
-# class BaseModel(Base):
-#     _abstract_ = True
-#     def serialize(self):
-#         result = dict()
-#         return {result[c.key]:getattr(self, c.key) for c in inspect(self).mapper.column_attrs}
 
 class Coordinate(Base):
     __tablename__ = 'coordinate'
